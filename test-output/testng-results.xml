@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-08T14:45:21 IST" name="Default suite" finished-at="2022-08-08T14:45:32 IST" duration-ms="10504">
+    <groups>
+    </groups>
+    <test started-at="2022-08-08T14:45:21 IST" name="Default test" finished-at="2022-08-08T14:45:32 IST" duration-ms="10504">
+      <class name="testCases.HowToFindBrokenLink">
+        <test-method signature="brokenLink()[pri:0, instance:testCases.HowToFindBrokenLink@7a419da4]" started-at="2022-08-08T14:45:21 IST" name="brokenLink" finished-at="2022-08-08T14:45:32 IST" duration-ms="10447" status="FAIL">
+          <exception class="java.net.SocketTimeoutException">
+            <message>
+              <![CDATA[Connect timed out]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.net.SocketTimeoutException: Connect timed out
+at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:543)
+at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+at java.base/java.net.Socket.connect(Socket.java:633)
+at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:299)
+at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:498)
+at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:603)
+at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:378)
+at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:189)
+at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:175)
+at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:142)
+at testCases.HowToFindBrokenLink.brokenLink(HowToFindBrokenLink.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.net.SocketTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brokenLink -->
+      </class> <!-- testCases.HowToFindBrokenLink -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
